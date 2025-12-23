@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>🌿 Mental Health Dashboard</h1>
+
+    <div class="card">
+      <h2>Book Therapy Session</h2>
+      <select id="therapist">
+        <option>Dr. Asha – Anxiety</option>
+        <option>Dr. Rahul – Stress</option>
+      </select>
+      <button onclick="bookSession()">Book Session</button>
+      <p id="sessionResult"></p>
+    </div>
+
+    <div class="card">
+      <h2>Mood Tracker</h2>
+      <select id="mood">
+        <option>😊 Happy</option>
+        <option>😐 Neutral</option>
+        <option>😔 Sad</option>
+        <option>😣 Anxious</option>
+      </select>
+      <button onclick="saveMood()">Save Mood</button>
+      <p id="moodResult"></p>
+    </div>
+
+    <div class="card">
+      <h2>Mood History</h2>
+      <button onclick="loadMoodHistory()">Load Mood History</button>
+      <ul id="moodHistory" class="history-list"></ul>
+    </div>
+
+    <div class="card">
+      <h2>Mind Relax Game</h2>
+      <button onclick="playGame()">Play Puzzle</button>
+      <p id="gameResult"></p>
+    </div>
+
+    <div class="card">
+      <h2>Payment</h2>
+      <p>Session Fee: ₹250</p>
+      <button onclick="makePayment()">Proceed to Payment</button>
+      <p id="paymentResult"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+
+</html>
